@@ -76,8 +76,7 @@ $(document).ready(() => {
 function genRandomCharacters(count) {
     var result = "";
 
-    //TODO split up into different types (i.e. upper, lower, numeric, special) based on checkboxes
-    const charSet = " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()-=_+"
+    const charSet = " ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()-=_+[]{}|`~?/"
 
     for (let i = 0; i < count; ++i) {
         result += charSet.charAt(Math.floor(Math.random() * charSet.length));

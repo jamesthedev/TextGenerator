@@ -28,13 +28,14 @@
     border-radius: 3px;
 }
 
+#chkBoxRow {
+    text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
     #appArea, #textGenFrm {
         margin: 0;
     }
-
-
-    
 }
 
 @media only screen and (max-height: 800px) {
