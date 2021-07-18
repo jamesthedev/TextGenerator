@@ -1,0 +1,29 @@
+#appArea {
+    background-color:aliceblue;
+    margin: 0% 15% 0% 15%;
+}
+
+#textGenFrm {
+    margin: 2% 15% 2% 15%;
+    padding: 6px;
+    text-align: center;
+}
+
+#title {
+    text-align: center;
+}
+
+#resultsTxt {
+    width: 90%;
+    margin: 15px auto 0px auto;
+}
+
+.btnGroup {
+    margin-top: 20px;
+}
+
+#txtRandomNum, #resultsTxt {
+    border: 1px solid grey;
+    background-color:rgb(245, 242, 242);
+    border-radius: 3px;
+}
