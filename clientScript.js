@@ -24,6 +24,9 @@ $(document).ready(() => {
             case "rdoLorem" : 
                 numTxt.innerHTML = "Number of words:";
                 selectedOpt = 3;
+            case "rdoNumber" : 
+                numTxt.innerHTML = "Length of number:";
+                selectedOpt = 4;
         }
     });
 
@@ -56,6 +59,10 @@ $(document).ready(() => {
 
         else if (selectedOpt === 3) {
             $('#resultsTxt').val(genLoremIpsum(randomCount));
+        }
+
+        else if (selectedOpt === 4) {
+            $('#resultsTxt').val(genRandomNumber(randomCount));
         }
     });
 
@@ -121,6 +128,19 @@ function genLoremIpsum(count) {
         
         result += liArray[index] + " ";
         ++index;
+    }
+
+    return result;
+}
+
+//generates random number 
+function genRandomNumber(count) {
+    var result = "";
+
+    const charSet = "0123456789"
+
+    for (let i = 0; i < count; ++i) {
+        result += charSet.charAt(Math.floor(Math.random() * charSet.length));
     }
 
     return result;
